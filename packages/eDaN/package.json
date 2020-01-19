@@ -2,7 +2,7 @@
   "name": "@evilfactory/edan",
   "version": "0.0.1",
   "description": "eViL dESaiN",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "repository": "https://github.com/evilfactorylabs/edan",
   "author": "evilfactory",
   "license": "MIT",
