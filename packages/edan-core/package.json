@@ -1,18 +1,19 @@
 {
-  "name": "@evilfactory/edan",
+  "name": "@evilfactory/edan-core",
   "version": "0.0.1",
   "description": "eViL dESaiN",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "repository": "https://github.com/evilfactorylabs/edan",
   "author": "evilfactory",
   "license": "MIT",
   "dependencies": {
-    "@emotion/core": "^10.0.27",
+    "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
+    "@styled-system/should-forward-prop": "^5.1.5",
     "emotion-theming": "^10.0.27",
-    "styled-system": "^5.1.4"
+    "styled-system": "^5.1.5"
   },
   "peerDependencies": {
-      "react": "*"
+    "react": "*"
   }
 }

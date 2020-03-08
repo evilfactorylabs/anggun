@@ -4,7 +4,10 @@
   "devDependencies": {
     "lerna": "^3.19.0"
   },
-  "workspaces":[
-    "packages/*" 
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
   ]
 }

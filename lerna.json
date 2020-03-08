@@ -1,13 +1,11 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*", "examples/*"],
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "command": {
-      "publish": {
-          "conventionalCommits": true
-      }
+    "publish": {
+      "conventionalCommits": true
+    }
   }
 }
