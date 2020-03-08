@@ -1,13 +1,13 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.css'
 import { ThemeProvider, Box } from '@evilfactory/edan-core'
+import logo from './logo.svg'
 
 function App() {
   return (
     <ThemeProvider>
-      <Box textAlign="center" width="50%" fontSize={32} m="auto" p={10}>
-        <Box bg="red.666" color="silver" my={20} borderRadius={3}>
+      <Box textAlign="center" width={1} fontSize={32} m="auto" p={10}>
+        <img alt="eDan design System" src={logo} />
+        <Box data-testid="button1" bg="red.666" color="silver" my={20} borderRadius={3}>
           I am the Box
         </Box>
         <Box bg="red.999" color="silver" my={20} border="solid 1px" borderWidth={2} borderRadius={6}>
@@ -16,26 +16,10 @@ function App() {
         <Box bg="navy" color="silver" my={20}>
           I am the Box
         </Box>
-        <Box color="#faf" my={20} border="solid 1px" borderWidth={2} borderRadius={999}>
+        <Box color="black" my={20} border="solid 1px" borderWidth={2} borderRadius={999}>
           I am the Box
         </Box>
       </Box>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
     </ThemeProvider>
   )
 }
