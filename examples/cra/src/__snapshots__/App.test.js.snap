@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`I am the box 1`] = `
+<div
+  class="css-1p1esn3"
+  data-testid="button1"
+>
+  I am the Box
+</div>
+`;
+
+exports[`renders learn react link 1`] = `
+<div
+  class="css-1p1esn3"
+  data-testid="button1"
+>
+  I am the Box
+</div>
+`;
