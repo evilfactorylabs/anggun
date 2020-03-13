@@ -1,7 +1,7 @@
 const fonts = {
-  heading: `Merriweather`,
-  body: `Inter`,
-  mono: `"Space Mono"`
+  heading: 'Merriweather',
+  body: 'Inter',
+  mono: '"Space Mono"'
 }
 
 export default {

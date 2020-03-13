@@ -4,8 +4,9 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean --yes",
-    "build:storybook": "yarn workspace cra run build:storybook",
-    "test:storybook": "yarn workspace cra run test"
+    "build:docs": "yarn workspace cra run build:storybook",
+    "test:docs": "yarn workspace cra run test",
+    "dev:docs": "yarn workspace cra run start"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
