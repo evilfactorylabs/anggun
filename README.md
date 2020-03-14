@@ -1,3 +1,3 @@
 # edan
 
-evilfactorylabs Design
+Evil Design
