@@ -11,12 +11,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "yarn build:storybook",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "build:storybook": "build-storybook -c .storybook -o build && now"
+    "build:storybook": "build-storybook -c .storybook -o build",
+    "build:storybook-now": "build-storybook -c .storybook -o build && now"
   },
   "eslintConfig": {
     "extends": "react-app"
