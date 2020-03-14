@@ -6,7 +6,8 @@
     "clean": "lerna clean --yes",
     "build:docs": "yarn workspace cra run build:storybook",
     "test:docs": "yarn workspace cra run test",
-    "dev:docs": "yarn workspace cra run start"
+    "dev:docs": "yarn workspace cra run start",
+    "storybook": "yarn workspace cra run storybook"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
