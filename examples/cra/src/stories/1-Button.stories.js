@@ -16,7 +16,7 @@ export const Box = () => (
   <ThemeProvider>
     <BoxComponent
       rounded={text('rounded', 'md')}
-      border={text('border', '1 px solid')}
+      border={text('border', '1px solid black')}
       as={text('as', 'div')}
       color={text('color', 'white')}
       bg={text('bg', '#FF5656')}
