@@ -1,9 +1,9 @@
 {
-  "name": "@evilfactory/edan-core",
+  "name": "@evilfactory/anggun-core",
   "version": "0.0.1",
   "description": "eViL dESaiN",
   "main": "src/index.js",
-  "repository": "https://github.com/evilfactorylabs/edan",
+  "repository": "https://github.com/evilfactorylabs/anggun",
   "author": "evilfactory",
   "license": "MIT",
   "dependencies": {

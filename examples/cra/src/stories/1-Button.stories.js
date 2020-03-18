@@ -1,6 +1,6 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
-import { ThemeProvider, Box as BoxComponent } from '@evilfactory/edan-core'
+import { ThemeProvider, Box as BoxComponent } from '@evilfactory/anggun-core'
 import { withKnobs, text, number } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 
