@@ -1,6 +1,6 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
-import { ThemeProvider, Box as BoxComponent } from '@evilfactory/anggun-core'
+import { ThemeProvider, Box as BoxComponent, Button as ButtonComp } from '@evilfactory/anggun-core'
 import { withKnobs, text, number } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 
@@ -27,5 +27,18 @@ export const Box = () => (
     >
       I am the box
     </BoxComponent>
+  </ThemeProvider>
+)
+
+export const Button = () => (
+  <ThemeProvider>
+    <ButtonComp
+      rounded={text('rounded', 'md')}
+      color={text('color', 'white')}
+      bg={text('bg', '#FF5656')}
+      size={text('size', 'medium')}
+    >
+      I am the box
+    </ButtonComp>
   </ThemeProvider>
 )
