@@ -4,6 +4,10 @@ const config = {
   rounded: {
     property: 'borderRadius',
     scale: 'radii'
+  },
+  height: {
+    property: 'height',
+    scale: 'sizes'
   }
 }
 

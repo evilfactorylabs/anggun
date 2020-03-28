@@ -4,12 +4,20 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean --yes",
+    "compile:core": "yarn workspace @evilfactory/anggun-core compile",
+    "compile:core:watch": "yarn workspace @evilfactory/anggun-core compile:watch",
     "build:docs": "yarn workspace cra run build:storybook",
     "test:docs": "yarn workspace cra run test",
     "dev:docs": "yarn workspace cra run start",
     "storybook": "yarn workspace cra run storybook"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-config-standard": "^14.1.0",
@@ -20,7 +28,9 @@
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.2.3",
     "lerna": "^3.20.2",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "rollup-plugin-babel": "^4.4.0"
   },
   "npmClient": "yarn",
   "useWorkspaces": true,

@@ -1,12 +1,92 @@
 import React from 'react'
-import { ThemeProvider, Box } from '@evilfactory/anggun-core'
+import { ThemeProvider, Box, Button } from '@evilfactory/anggun-core'
 import logo from './logo.svg'
 
 function App() {
   return (
     <ThemeProvider>
-      <Box textAlign='center' width={1} fontSize={32} m='auto' p={10}>
-        <img alt='eDan design System' src={logo} />
+      <Box bg='silver' p={3}>
+        <Button mx={2} bg='blue' size='big' rounded='none'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999' size='big'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999' size='big' rounded='md'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999' size='big' rounded='lg'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999' size='big' rounded='full'>
+          Button
+        </Button>
+      </Box>
+      <br />
+      <br />
+
+      <Box bg='silver' p={3}>
+        <Button mx={2} bg='blue' size='large' rounded='none'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999' size='large'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999' size='large' rounded='md'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999' size='large' rounded='lg'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999' size='large' rounded='full'>
+          Button
+        </Button>
+      </Box>
+      <br />
+      <br />
+
+      <Box bg='silver' p={3}>
+        <Button mx={2} bg='blue' rounded='none'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999' rounded='md'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999' rounded='lg'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999' rounded='full'>
+          Button
+        </Button>
+      </Box>
+      <br />
+      <br />
+
+      <Box bg='silver' p={3}>
+        <Button mx={2} bg='blue' size='small' rounded='none'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999' size='small'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999' size='small' rounded='md'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999' size='small' rounded='lg'>
+          Button
+        </Button>
+        <Button mx={2} bg='red.999' size='small' rounded='full'>
+          Button
+        </Button>
+      </Box>
+      <br />
+      <br />
+
+      <Box textAlign='center' fontSize={32} m='auto'>
+        <img alt='Anggun Design System' src={logo} />
 
         <Box data-testid='border-radius' rounded='full' bg='red.666' color='silver'>
           Box with border radius
