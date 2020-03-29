@@ -4,12 +4,12 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean --yes",
-    "compile:core": "yarn workspace @evilfactory/anggun-core compile",
-    "compile:core:watch": "yarn workspace @evilfactory/anggun-core compile:watch",
-    "build:docs": "yarn workspace cra run build",
-    "test:docs": "yarn workspace cra run test",
-    "dev:docs": "yarn workspace cra run start",
-    "storybook": "yarn workspace cra run storybook"
+    "compile:core": "lerna run compile --scope=@evilfactory/anggun-core --parallel",
+    "compile:core:watch": "lerna run compile:watch --scope=@evilfactory/anggun-core --parallel",
+    "build:docs": "yarn compile:core && lerna run build --parallel",
+    "dev:docs": "lerna run start --scope=cra --parallel",
+    "test:docs": "lerna run test --scope=cra --parallel",
+    "storybook": "lerna run storybook --scope=cra --parallel"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
