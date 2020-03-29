@@ -1,11 +1,17 @@
-import { createElement } from 'react'
-import { ThemeProvider } from 'emotion-theming'
+/* eslint-disable react/prop-types */
+/** @jsx jsx */
+import { jsx } from '@emotion/core'
+import { ThemeProvider as EmotionThemeProvider } from 'emotion-theming'
 import defaultTheme from '../theme'
 
-const Theme = ({ children, ...props }) => createElement(ThemeProvider, props, children)
+// const ThemeProvider = ({ children, ...props }) => createElement(ThemeProvider, props, children)
 
-Theme.defaultProps = {
+const ThemeProvider = ({ children, theme }) => (
+  <EmotionThemeProvider theme={theme}>{children}</EmotionThemeProvider>
+)
+
+ThemeProvider.defaultProps = {
   theme: defaultTheme
 }
 
-export default Theme
+export default ThemeProvider

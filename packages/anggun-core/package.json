@@ -1,11 +1,17 @@
 {
   "name": "@evilfactory/anggun-core",
   "version": "0.0.1",
-  "description": "eViL dESaiN",
-  "main": "src/index.js",
+  "description": "Evilfactory Design System",
+  "main": "dist/index.js",
   "repository": "https://github.com/evilfactorylabs/anggun",
   "author": "evilfactory",
   "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "rollup": "rollup -c ./rollup.config.js",
+    "compile": "yarn clean && yarn rollup",
+    "compile:watch": "yarn clean && yarn rollup --watch"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
@@ -14,6 +20,7 @@
     "styled-system": "^5.1.5"
   },
   "peerDependencies": {
-    "react": "*"
+    "react": "*",
+    "react-dom": "*"
   }
 }
