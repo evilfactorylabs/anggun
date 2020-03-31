@@ -2,7 +2,6 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "clean": "lerna clean --yes",
     "compile:core": "lerna run compile --scope=@evilfactory/anggun-core --stream",
     "compile:core:watch": "lerna run compile:watch --scope=@evilfactory/anggun-core --stream",
@@ -16,6 +15,8 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
     "eslint": "^6.8.0",
@@ -41,6 +42,7 @@
   ],
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
   },
