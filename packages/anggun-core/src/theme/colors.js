@@ -13,7 +13,11 @@ const colors = {
     666: '#333333',
     999: '#000000'
   },
-  blue: '#1C6FD0',
+  white: '#FFFFFF',
+  warning: '#F8B838',
+  success: '#258651',
+  primary: '#1C6FD0',
+  danger: '#D01C22',
   navy: '#001B44',
   silver: '#eeeeee',
   gray: '#dddddd'
