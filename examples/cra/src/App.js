@@ -5,6 +5,21 @@ import logo from './logo.svg'
 function App() {
   return (
     <ThemeProvider>
+      <Button mx={2} bg='primary'>
+        Button Solid
+      </Button>
+      <Button mx={2} bg='warning'>
+        Button Solid
+      </Button>
+      <Button mx={2} bg='success'>
+        Button Solid
+      </Button>
+      <Button bg='success' mx={2} variant='outline'>
+        Button outline
+      </Button>
+      <Button bg='primary' mx={2} variant='outline'>
+        Button outline
+      </Button>
       <Box bg='silver' p={3}>
         <Button mx={2} bg='blue' size='big' rounded='none'>
           Button
