@@ -1,7 +1,7 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
 import { ThemeProvider, Box as BoxComponent, Button as ButtonComp } from '@evilfactory/anggun-core'
-import { withKnobs, text, number } from '@storybook/addon-knobs'
+import { withKnobs, text, number, select } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 
 export default {
@@ -25,20 +25,27 @@ export const Box = () => (
       px={number('px', 2)}
       p={number('p', 2)}
     >
-      I am the box
+      Box
     </BoxComponent>
   </ThemeProvider>
 )
 
-export const Button = () => (
-  <ThemeProvider>
-    <ButtonComp
-      rounded={text('rounded', 'md')}
-      color={text('color', 'white')}
-      bg={text('bg', '#FF5656')}
-      size={text('size', 'medium')}
-    >
-      I am the box
-    </ButtonComp>
-  </ThemeProvider>
-)
+export const Button = () => {
+  const variants = ['solid', 'outline']
+  const rounded = ['none', 'sm', 'md', 'lg', 'full']
+  const sizes = ['small', 'medium', 'large', 'big']
+  const colors = ['white', 'warning', 'success', 'primary', 'danger', 'navy', 'silver', 'gray']
+  return (
+    <ThemeProvider>
+      <ButtonComp
+        rounded={select('rounded', rounded, rounded[1])}
+        color={text('color', '#FFFFFF')}
+        bg={select('bg', colors, colors[1])}
+        size={select('size', sizes, sizes[1])}
+        variant={select('variant', variants, variants[0])}
+      >
+        Button
+      </ButtonComp>
+    </ThemeProvider>
+  )
+}

@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "bootstrap": "yarn clean && lerna bootstrap",
     "clean": "lerna clean --yes",
     "compile:core": "lerna run compile --scope=@evilfactory/anggun-core --stream",
     "compile:core:watch": "lerna run compile:watch --scope=@evilfactory/anggun-core --stream",

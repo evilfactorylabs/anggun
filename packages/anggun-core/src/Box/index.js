@@ -1,5 +1,7 @@
 import styled from '@emotion/styled'
 import shouldForwardProp from '@styled-system/should-forward-prop'
+import css from '@styled-system/css'
+
 import extraConfig from './config'
 /*
  * @see {https://styled-system.com/api}
@@ -33,7 +35,7 @@ const composeStyles = compose(
 )
 
 const Box = styled('div', { shouldForwardProp })(composeStyles, {
-  boxSizing: 'border-box',
+  css,
   minWidth: 0
 })
 

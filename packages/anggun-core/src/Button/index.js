@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { forwardRef } from 'react'
+// import css from '@styled-system/css'
+
 import Box from '../Box'
 
 const sizes = {
@@ -27,23 +29,22 @@ const sizes = {
 
 const sizeProps = size => sizes[size]
 
-const solidButton = ({ children, border, size, ...rest }) => {
-  // console.log('solid', { children, border, size, ...rest })
+const solidButton = ({ children, border, color, bg, size, ...rest }) => {
+  color = bg === 'warning' ? 'black' : 'white'
   return (
-    <Box border='none' {...sizeProps(size)} {...rest}>
+    <Box border='none' color={color} bg={bg} {...sizeProps(size)} {...rest}>
       {children}
     </Box>
   )
 }
 
 const outlineButton = ({ children, color, border, bg, size, ...rest }) => {
-  // console.log('outline', { children, border, size, ...rest })
   return (
     <Box
       borderStyle='solid'
       borderWidth='2px'
       borderColor={bg}
-      bg='white'
+      bg='inherit'
       color={bg}
       {...sizeProps(size)}
       {...rest}
@@ -80,7 +81,6 @@ const Button = forwardRef(
     const vari = variantButton({
       children,
       as,
-      // border,
       rounded,
       color,
       size,
@@ -89,19 +89,6 @@ const Button = forwardRef(
       ...rest
     })
     return vari
-    // return (
-    //   <Box
-    //     as={as}
-    //     border={border}
-    //     rounded={rounded}
-    //     color={color}
-    //     ref={ref}
-    //     {...sizeProps(size)}
-    //     {...rest}
-    //   >
-    //     {children}
-    //   </Box>
-    // )
   }
 )
 
