@@ -1,6 +1,6 @@
 {
   "name": "@evilfactory/anggun-core",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Evilfactory Design System",
   "main": "dist/index.js",
   "repository": "https://github.com/evilfactorylabs/anggun",
