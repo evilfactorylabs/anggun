@@ -6,13 +6,13 @@ import Box from '../Box'
 
 const sizes = {
   big: {
-    px: 7,
-    height: 10,
+    px: 6,
+    height: 9,
     fontSize: 4
   },
   large: {
-    px: 6,
-    height: 9,
+    px: 5,
+    height: 8,
     fontSize: 3
   },
   medium: {
@@ -21,8 +21,8 @@ const sizes = {
     fontSize: 2
   },
   small: {
-    px: 2,
-    height: 5,
+    px: 3,
+    height: 6,
     fontSize: 1
   }
 }

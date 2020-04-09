@@ -1,12 +1,19 @@
 import React from 'react'
-import { ThemeProvider, Box, Button } from '@evilfactory/anggun-core'
+import { ThemeProvider, Box, Button, Spacer } from '@evilfactory/anggun-core'
 import logo from './logo.svg'
+import { useState } from 'react'
 
 function App() {
+  const [toggle, setToggle] = useState('solid')
   return (
     <ThemeProvider>
-      <Button mx={2} bg='primary'>
-        Button Solid
+      <Button
+        onClick={() => setToggle(current => (current === 'solid' ? 'outline' : 'solid'))}
+        variant={toggle}
+        mx={2}
+        bg='primary'
+      >
+        Toggle Button
       </Button>
       <Button mx={2} bg='warning'>
         Button Solid
@@ -14,91 +21,95 @@ function App() {
       <Button mx={2} bg='success'>
         Button Solid
       </Button>
+      <Spacer x={5} />
       <Button bg='success' mx={2} variant='outline'>
         Button outline
       </Button>
       <Button bg='primary' mx={2} variant='outline'>
         Button outline
       </Button>
-      <Box bg='silver' p={3}>
-        <Button mx={2} bg='blue' size='big' rounded='none'>
-          Button
-        </Button>
-        <Button mx={2} bg='red.999' size='big'>
-          Button
-        </Button>
-        <Button mx={2} bg='red.999' size='big' rounded='md'>
-          Button
-        </Button>
-        <Button mx={2} bg='red.999' size='big' rounded='lg'>
-          Button
-        </Button>
-        <Button mx={2} bg='red.999' size='big' rounded='full'>
-          Button
-        </Button>
-      </Box>
-      <br />
-      <br />
+
+      <Spacer y={2} />
 
       <Box bg='silver' p={3}>
-        <Button mx={2} bg='blue' size='large' rounded='none'>
+        <Button mx={2} bg='primary' size='big' rounded='none'>
           Button
         </Button>
-        <Button mx={2} bg='red.999' size='large'>
+        <Button mx={2} bg='danger' size='big'>
           Button
         </Button>
-        <Button mx={2} bg='red.999' size='large' rounded='md'>
+        <Button mx={2} bg='danger' size='big' rounded='md'>
           Button
         </Button>
-        <Button mx={2} bg='red.999' size='large' rounded='lg'>
+        <Button mx={2} bg='danger' size='big' rounded='lg'>
           Button
         </Button>
-        <Button mx={2} bg='red.999' size='large' rounded='full'>
+        <Button mx={2} bg='danger' size='big' rounded='full'>
           Button
         </Button>
       </Box>
-      <br />
-      <br />
+
+      <Spacer y={2} />
 
       <Box bg='silver' p={3}>
-        <Button mx={2} bg='blue' rounded='none'>
+        <Button mx={2} bg='primary' size='large' rounded='none'>
           Button
         </Button>
-        <Button mx={2} bg='red.999'>
+        <Button mx={2} bg='danger' size='large'>
           Button
         </Button>
-        <Button mx={2} bg='red.999' rounded='md'>
+        <Button mx={2} bg='danger' size='large' rounded='md'>
           Button
         </Button>
-        <Button mx={2} bg='red.999' rounded='lg'>
+        <Button mx={2} bg='danger' size='large' rounded='lg'>
           Button
         </Button>
-        <Button mx={2} bg='red.999' rounded='full'>
+        <Button mx={2} bg='danger' size='large' rounded='full'>
           Button
         </Button>
       </Box>
-      <br />
-      <br />
+
+      <Spacer y={2} />
 
       <Box bg='silver' p={3}>
-        <Button mx={2} bg='blue' size='small' rounded='none'>
+        <Button mx={2} bg='primary' rounded='none'>
           Button
         </Button>
-        <Button mx={2} bg='red.999' size='small'>
+        <Button mx={2} bg='danger'>
           Button
         </Button>
-        <Button mx={2} bg='red.999' size='small' rounded='md'>
+        <Button mx={2} bg='danger' rounded='md'>
           Button
         </Button>
-        <Button mx={2} bg='red.999' size='small' rounded='lg'>
+        <Button mx={2} bg='danger' rounded='lg'>
           Button
         </Button>
-        <Button mx={2} bg='red.999' size='small' rounded='full'>
+        <Button mx={2} bg='danger' rounded='full'>
           Button
         </Button>
       </Box>
-      <br />
-      <br />
+
+      <Spacer y={2} />
+
+      <Box bg='silver' p={3}>
+        <Button mx={2} bg='primary' size='small' rounded='none'>
+          Button
+        </Button>
+        <Button mx={2} bg='danger' size='small'>
+          Button
+        </Button>
+        <Button mx={2} bg='danger' size='small' rounded='md'>
+          Button
+        </Button>
+        <Button mx={2} bg='danger' size='small' rounded='lg'>
+          Button
+        </Button>
+        <Button mx={2} bg='danger' size='small' rounded='full'>
+          Button
+        </Button>
+      </Box>
+
+      <Spacer y={2} />
 
       <Box textAlign='center' fontSize={32} m='auto'>
         <img alt='Anggun Design System' src={logo} />
@@ -109,14 +120,7 @@ function App() {
         <Box data-testid='button1' bg='red.666' color='silver' my={20} borderRadius={3}>
           I am the Box
         </Box>
-        <Box
-          bg='red.999'
-          color='silver'
-          my={20}
-          border='solid 1px'
-          borderWidth={2}
-          borderRadius={6}
-        >
+        <Box bg='danger' color='silver' my={20} border='solid 1px' borderWidth={2} borderRadius={6}>
           I am the Box
         </Box>
         <Box bg='navy' color='silver' my={20}>
