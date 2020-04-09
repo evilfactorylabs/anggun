@@ -6,6 +6,9 @@
   "repository": "https://github.com/evilfactorylabs/anggun",
   "author": "evilfactory",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "rollup": "rollup -c ./rollup.config.js",
