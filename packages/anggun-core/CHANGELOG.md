@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/evilfactorylabs/anggun/compare/@evilfactory/anggun-core@0.1.0...@evilfactory/anggun-core@0.1.1) (2020-04-10)
+
+**Note:** Version bump only for package @evilfactory/anggun-core
+
 # 0.1.0 (2020-04-09)
 
 ### Features
