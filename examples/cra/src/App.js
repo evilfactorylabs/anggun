@@ -1,5 +1,5 @@
 import React from 'react'
-import { ThemeProvider, Box, Button, Spacer } from '@evilfactory/anggun-core'
+import { ThemeProvider, Box, Button, Spacer, CSSReset } from '@evilfactory/anggun-core'
 import logo from './logo.svg'
 import { useState } from 'react'
 
@@ -7,6 +7,8 @@ function App() {
   const [toggle, setToggle] = useState('solid')
   return (
     <ThemeProvider>
+      <CSSReset />
+      <Spacer y={1} />
       <Button
         onClick={() => setToggle(current => (current === 'solid' ? 'outline' : 'solid'))}
         variant={toggle}
