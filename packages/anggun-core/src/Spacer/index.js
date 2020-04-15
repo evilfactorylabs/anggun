@@ -3,7 +3,6 @@ import React, { forwardRef } from 'react'
 
 import Box from '../Box'
 
-// const transformValue = value => (typeof value === 'number' ? (value *= 0.5) : value)
 const transformValue = value => (typeof value === 'number' ? `${value * 10}px` : value)
 
 const Spacer = forwardRef(({ y, x }, ref) => {
