@@ -8,22 +8,22 @@ const sizes = {
   big: {
     px: 6,
     height: 9,
-    fontSize: 4
+    fontSize: 'xl'
   },
   large: {
     px: 5,
     height: 8,
-    fontSize: 3
+    fontSize: 'lg'
   },
   medium: {
     px: 4,
     height: 7,
-    fontSize: 2
+    fontSize: 'md'
   },
   small: {
     px: 3,
     height: 6,
-    fontSize: 1
+    fontSize: 'sm'
   }
 }
 

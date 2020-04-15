@@ -1,6 +1,11 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
-import { ThemeProvider, Box as BoxComponent, Button as ButtonComp } from '@evilfactory/anggun-core'
+import {
+  ThemeProvider,
+  CSSReset,
+  Box as BoxComponent,
+  Button as ButtonComp
+} from '@evilfactory/anggun-core'
 import { withKnobs, text, number, select } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 
@@ -14,6 +19,7 @@ export const Text = () => <BoxComponent onClick={action('clicked')}>Hello Button
 
 export const Box = () => (
   <ThemeProvider>
+    <CSSReset />
     <BoxComponent
       rounded={text('rounded', 'md')}
       border={text('border', '1px solid black')}

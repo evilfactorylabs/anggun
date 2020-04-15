@@ -1,5 +1,5 @@
 import React from 'react'
-import { ThemeProvider, Box, Button, Spacer, CSSReset } from '@evilfactory/anggun-core'
+import { ThemeProvider, Box, Button, Spacer, Text, CSSReset } from '@evilfactory/anggun-core'
 import logo from './logo.svg'
 import { useState } from 'react'
 
@@ -8,6 +8,31 @@ function App() {
   return (
     <ThemeProvider>
       <CSSReset />
+
+      <Spacer y={2} />
+
+      <Box textAlign='center'>
+        <img alt='Anggun Design System' src={logo} />
+      </Box>
+
+      <Spacer y={2} />
+
+      <Text as='kbd' fontSize='lg'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </Text>
+
+      <Text>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </Text>
+
       <Spacer y={1} />
       <Button
         onClick={() => setToggle(current => (current === 'solid' ? 'outline' : 'solid'))}
@@ -114,8 +139,6 @@ function App() {
       <Spacer y={2} />
 
       <Box textAlign='center' fontSize={32} m='auto'>
-        <img alt='Anggun Design System' src={logo} />
-
         <Box data-testid='border-radius' rounded='full' bg='red.666' color='silver'>
           Box with border radius
         </Box>
