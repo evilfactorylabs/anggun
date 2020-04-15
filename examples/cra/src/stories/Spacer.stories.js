@@ -1,6 +1,7 @@
 import React from 'react'
 import {
   ThemeProvider,
+  CSSReset,
   Box as BoxComponent,
   Button as ButtonComp,
   Spacer as SpacerComp
@@ -15,6 +16,7 @@ export default {
 
 export const SpacerY = () => (
   <ThemeProvider>
+    <CSSReset />
     <BoxComponent as='div' color='white' bg='success' p={2}>
       Box
     </BoxComponent>
