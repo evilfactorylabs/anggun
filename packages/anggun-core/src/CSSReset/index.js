@@ -22,6 +22,10 @@ const CSSReset = () => (
       kbd {
         font-family: ${theme.fonts.mono};
       }
+
+      p {
+        margin: 0;
+      }
     `}
   />
 )
