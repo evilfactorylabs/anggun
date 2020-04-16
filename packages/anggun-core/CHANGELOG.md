@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/evilfactorylabs/anggun/compare/@evilfactory/anggun-core@0.1.1...@evilfactory/anggun-core@0.2.0) (2020-04-16)
+
+
+### Features
+
+* **core:** add CSSReset component ([#16](https://github.com/evilfactorylabs/anggun/issues/16)) ([38921bf](https://github.com/evilfactorylabs/anggun/commit/38921bf430f5aaa34425b910e89c04bb0828faee))
+* **core:** add text component ([#17](https://github.com/evilfactorylabs/anggun/issues/17)) ([5398f0e](https://github.com/evilfactorylabs/anggun/commit/5398f0e1e5765b968a66f03a8a4c0861985c7b38))
+
+
+
+
+
 ## [0.1.1](https://github.com/evilfactorylabs/anggun/compare/@evilfactory/anggun-core@0.1.0...@evilfactory/anggun-core@0.1.1) (2020-04-10)
 
 **Note:** Version bump only for package @evilfactory/anggun-core
