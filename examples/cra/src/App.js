@@ -3,6 +3,8 @@ import { ThemeProvider, Box, Button, Spacer, Text, CSSReset } from '@evilfactory
 import logo from './logo.svg'
 import { useState } from 'react'
 
+import GridComponent from './components/GridComponent'
+
 function App() {
   const [toggle, setToggle] = useState('solid')
   return (
@@ -14,6 +16,10 @@ function App() {
       <Box textAlign='center'>
         <img alt='Anggun Design System' src={logo} />
       </Box>
+
+      <Spacer y={2} />
+
+      <GridComponent />
 
       <Spacer y={2} />
 

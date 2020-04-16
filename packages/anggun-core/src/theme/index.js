@@ -23,7 +23,7 @@ const sizes = [
   '4rem'
 ]
 
-const space = sizes
+const space = [0, 4, 8, 16, 32, 64, 128, 256, 512]
 
 // const breakpoints = [] // TODO  define type breakpoints size  (e.g: xl, xxl, xyz)
 const breakpoints = ['40em', '52em', '64em']
