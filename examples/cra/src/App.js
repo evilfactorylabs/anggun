@@ -4,6 +4,7 @@ import logo from './logo.svg'
 import { useState } from 'react'
 
 import GridComponent from './components/GridComponent'
+import FlexComponent from './components/FlexComponent'
 
 function App() {
   const [toggle, setToggle] = useState('solid')
@@ -16,6 +17,10 @@ function App() {
       <Box textAlign='center'>
         <img alt='Anggun Design System' src={logo} />
       </Box>
+
+      <Spacer y={2} />
+
+      <FlexComponent />
 
       <Spacer y={2} />
 
