@@ -34,8 +34,8 @@ const composeStyles = compose(
 )
 
 const Box = styled('div', { shouldForwardProp })(composeStyles, {
-  minWidth: 0,
-  boxSizing: 'border-box'
+  // minWidth: 0,
+  // boxSizing: 'border-box'
 })
 
 Box.displayName = 'Box'

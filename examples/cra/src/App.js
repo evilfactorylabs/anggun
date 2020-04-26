@@ -45,11 +45,39 @@ function App() {
       </Text>
 
       <Spacer y={1} />
+
+      <Button mx={2} bg='warning'>
+        Button Solid Button Solid Button Solid Button Solid
+      </Button>
+
+      <Spacer y={1} />
+
+      <Button mx={2} size='large' bg='warning'>
+        Button Solid Button Solid Button Solid Button Solid
+      </Button>
+
+      <Spacer y={1} />
+
+      <Button mx={2} bg='warning'>
+        Button
+      </Button>
+
+      <Spacer y={1} />
+
+      <Button mx={2} size='small' bg='warning'>
+        Button
+      </Button>
+
+      <Button mx={2} fontSize='12px' size='small' bg='warning'>
+        Button
+      </Button>
+
+      <Spacer y={1} />
       <Button
         onClick={() => setToggle(current => (current === 'solid' ? 'outline' : 'solid'))}
         variant={toggle}
         mx={2}
-        bg='primary'
+        bg='warning'
       >
         Toggle Button
       </Button>
@@ -66,26 +94,6 @@ function App() {
       <Button bg='primary' mx={2} variant='outline'>
         Button outline
       </Button>
-
-      <Spacer y={2} />
-
-      <Box bg='silver' p={3}>
-        <Button mx={2} bg='primary' size='big' rounded='none'>
-          Button
-        </Button>
-        <Button mx={2} bg='danger' size='big'>
-          Button
-        </Button>
-        <Button mx={2} bg='danger' size='big' rounded='md'>
-          Button
-        </Button>
-        <Button mx={2} bg='danger' size='big' rounded='lg'>
-          Button
-        </Button>
-        <Button mx={2} bg='danger' size='big' rounded='full'>
-          Button
-        </Button>
-      </Box>
 
       <Spacer y={2} />
 

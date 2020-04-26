@@ -39,8 +39,8 @@ export const Box = () => (
 export const Button = () => {
   const variants = ['solid', 'outline']
   const rounded = ['none', 'sm', 'md', 'lg', 'full']
-  const sizes = ['small', 'medium', 'large', 'big']
-  const colors = ['white', 'warning', 'success', 'primary', 'danger', 'navy', 'silver', 'gray']
+  const sizes = ['small', 'medium', 'large']
+  const colors = ['white', 'warning', 'success', 'primary', 'danger']
   return (
     <ThemeProvider>
       <ButtonComp

@@ -1,29 +1,26 @@
 /* eslint-disable react/prop-types */
 import React, { forwardRef } from 'react'
-// import css from '@styled-system/css'
 
 import Box from '../Box'
 
 const sizes = {
-  big: {
-    px: 6,
-    height: 9,
-    fontSize: 'xl'
-  },
   large: {
     px: 5,
-    height: 8,
-    fontSize: 'lg'
+    height: 11,
+    fontSize: 'md',
+    minWidth: 'large'
   },
   medium: {
-    px: 4,
-    height: 7,
-    fontSize: 'md'
+    px: 5,
+    height: 9,
+    fontSize: 'sm',
+    minWidth: 'medium'
   },
   small: {
     px: 3,
-    height: 6,
-    fontSize: 'sm'
+    height: 5,
+    fontSize: 'sm',
+    minWidth: 'small'
   }
 }
 
