@@ -20,10 +20,16 @@ const sizes = [
   '3.25rem',
   '3.5rem',
   '3.75rem',
-  '4rem'
+  '4rem',
+  '100px',
+  '150px',
+  '200px'
 ]
+sizes.small = sizes[sizes.length - 3]
+sizes.medium = sizes[sizes.length - 2]
+sizes.large = sizes[sizes.length - 1]
 
-const space = [0, 4, 8, 16, 32, 64, 128, 256, 512]
+const space = [0, 4, 8, 10, 16, 20, 32, 64, 128, 256, 512]
 
 // const breakpoints = [] // TODO  define type breakpoints size  (e.g: xl, xxl, xyz)
 const breakpoints = ['40em', '52em', '64em']
