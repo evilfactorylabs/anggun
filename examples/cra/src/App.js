@@ -1,5 +1,5 @@
 import React from 'react'
-import { ThemeProvider, Box, Button, Spacer, Text, CSSReset } from '@evilfactory/anggun-core'
+import { ThemeProvider, CSSReset, Box, Button, Spacer, Text, Badge } from '@evilfactory/anggun-core'
 import logo from './logo.svg'
 import { useState } from 'react'
 
@@ -16,6 +16,28 @@ function App() {
 
       <Box textAlign='center'>
         <img alt='Anggun Design System' src={logo} />
+      </Box>
+
+      <Spacer y={2} />
+
+      <Box textAlign='center'>
+        <Badge primary>Primary</Badge>
+
+        <Spacer x={2} />
+
+        <Badge warning>warning</Badge>
+
+        <Spacer x={2} />
+
+        <Badge success>SUCCESS</Badge>
+
+        <Spacer x={2} />
+
+        <Badge success>123</Badge>
+
+        <Spacer x={2} />
+
+        <Badge danger>danger</Badge>
       </Box>
 
       <Spacer y={2} />

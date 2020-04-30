@@ -11,10 +11,13 @@ const CSSReset = () => (
         border: 0;
         font-size: 100%;
         line-height: 1.5;
+        verticalAlign='middle'
       }
 
       html {
+        text-rendering: optimizelegibility;
         font-family: ${theme.fonts.body};
+        box-sizing: border-box;
       }
 
       samp,
