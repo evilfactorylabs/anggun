@@ -21,11 +21,41 @@ function App() {
       <Spacer y={2} />
 
       <Box textAlign='center'>
-        <Badge primary>Primary</Badge>
+        <Badge primary variant='outline' size='small'>
+          Primary
+        </Badge>
+
+        <Spacer x={1} />
+
+        <Badge primary size='small'>
+          Primary
+        </Badge>
+
+        <Spacer y={1} />
+        <Badge primary size='medium'>
+          Primary
+        </Badge>
+        <Spacer x={1} />
+        <Badge primary variant='outline' size='medium'>
+          Primary
+        </Badge>
+        <Spacer y={1} />
+        <Badge primary size='large'>
+          Primary
+        </Badge>
+        <Spacer y={1} />
+        <Badge primary size='large' fontSize='12px'>
+          Primary
+        </Badge>
+        <Spacer y={1} />
 
         <Spacer x={2} />
 
         <Badge warning>warning</Badge>
+        <Spacer x={2} />
+        <Badge warning variant='outline'>
+          warning
+        </Badge>
 
         <Spacer x={2} />
 
