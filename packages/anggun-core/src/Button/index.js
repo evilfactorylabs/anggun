@@ -27,9 +27,9 @@ const sizes = {
 const sizeProps = size => sizes[size]
 
 const solidButton = ({ children, border, color, bg, size, ...rest }) => {
-  color = bg === 'warning' ? 'black' : 'white'
+  const _color = bg === 'warning' ? 'black' : color
   return (
-    <Box border='none' color={color} bg={bg} {...sizeProps(size)} {...rest}>
+    <Box border='none' color={_color} bg={bg} {...sizeProps(size)} {...rest}>
       {children}
     </Box>
   )
