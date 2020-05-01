@@ -61,7 +61,7 @@ const Badge = forwardRef(
       danger,
       warning,
       success,
-      color,
+      color = 'white',
       rounded = 'sm',
       size = 'small',
       ...rest
@@ -74,7 +74,8 @@ const Badge = forwardRef(
      * available bg { primary danger, warning, succcess }
      */
     const bg = bgStyle({ primary, danger, warning, success })
-    color = bg === 'warning' ? 'black' : 'white'
+    const _color = bg === 'warning' ? 'black' : color
+    console.log(_color)
     return (
       <Box
         ref={ref}
@@ -82,7 +83,7 @@ const Badge = forwardRef(
         verticalAlign='middle'
         as='span'
         rounded={rounded}
-        {...variantBadge({ variant, bg, color })}
+        {...variantBadge({ variant, bg, color: _color })}
         {...sizeProps(size)}
         {...rest}
       >
