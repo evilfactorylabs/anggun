@@ -12,38 +12,79 @@ const bgStyle = bgColors => {
   }
 }
 
+const sizes = {
+  large: {
+    px: 3,
+    fontSize: 'md'
+  },
+  medium: {
+    px: 2,
+    fontSize: 'sm'
+  },
+  small: {
+    px: 1,
+    fontSize: 'xs'
+  }
+}
+
+const sizeProps = size => sizes[size]
+
+const solidBadge = ({ color, bg }) => ({
+  border: 'none',
+  color,
+  bg
+})
+
+const outlineBadge = ({ bg }) => ({
+  borderStyle: 'solid',
+  borderWidth: '1px',
+  borderColor: bg,
+  color: bg,
+  bg: 'inherit'
+})
+
+const variantBadge = ({ variant, ...props }) => {
+  switch (variant) {
+    case 'solid':
+      return solidBadge(props)
+    case 'outline':
+      return outlineBadge(props)
+  }
+}
+
 const Badge = forwardRef(
   (
     {
       children,
+      variant = 'solid',
       primary,
       danger,
       warning,
       success,
-      as = 'span',
-      border = 'none',
-      color,
+      color = 'white',
       rounded = 'sm',
-      // size = 'small',
+      size = 'small',
       ...rest
     },
     ref
   ) => {
+    /*
+     * You can use bg like:
+     * <Badge primary />
+     * available bg { primary danger, warning, succcess }
+     */
     const bg = bgStyle({ primary, danger, warning, success })
-    color = bg === 'warning' ? 'black' : 'white'
+    const _color = bg === 'warning' ? 'black' : color
+    console.log(_color)
     return (
       <Box
         ref={ref}
         display='inline-block'
         verticalAlign='middle'
-        as={as}
-        bg={bg}
-        border={border}
-        fontSize='sm'
-        color={color}
+        as='span'
         rounded={rounded}
-        // size={size}
-        px={1}
+        {...variantBadge({ variant, bg, color: _color })}
+        {...sizeProps(size)}
         {...rest}
       >
         {children}

@@ -27,9 +27,9 @@ const sizes = {
 const sizeProps = size => sizes[size]
 
 const solidButton = ({ children, border, color, bg, size, ...rest }) => {
-  color = bg === 'warning' ? 'black' : 'white'
+  const _color = bg === 'warning' ? 'black' : color
   return (
-    <Box border='none' color={color} bg={bg} {...sizeProps(size)} {...rest}>
+    <Box border='none' color={_color} bg={bg} {...sizeProps(size)} {...rest}>
       {children}
     </Box>
   )
@@ -39,7 +39,7 @@ const outlineButton = ({ children, color, border, bg, size, ...rest }) => {
   return (
     <Box
       borderStyle='solid'
-      borderWidth='2px'
+      borderWidth='1px'
       borderColor={bg}
       bg='inherit'
       color={bg}
@@ -54,9 +54,9 @@ const outlineButton = ({ children, color, border, bg, size, ...rest }) => {
 const variantButton = ({ variant, ...props }) => {
   switch (variant) {
     case 'solid':
-      return solidButton({ ...props })
+      return solidButton(props)
     case 'outline':
-      return outlineButton({ ...props })
+      return outlineButton(props)
   }
 }
 
@@ -67,15 +67,14 @@ const Button = forwardRef(
       as = 'button',
       border = 'none',
       rounded = 'sm',
-      color,
+      color = 'white',
       size = 'medium',
       variant = 'solid',
       ...rest
     },
     ref
-  ) => {
-    color = color || 'white'
-    const vari = variantButton({
+  ) =>
+    variantButton({
       children,
       as,
       rounded,
@@ -85,8 +84,6 @@ const Button = forwardRef(
       ref,
       ...rest
     })
-    return vari
-  }
 )
 
 Button.displayName = 'Button'
