@@ -8,6 +8,14 @@ const config = {
   height: {
     property: 'height',
     scale: 'sizes'
+  },
+  nativeHeight: {
+    property: 'height',
+    scale: 'sizes'
+  },
+  nativeWidth: {
+    property: 'width',
+    scale: 'sizes'
   }
 }
 

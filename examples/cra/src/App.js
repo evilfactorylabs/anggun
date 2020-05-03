@@ -1,5 +1,14 @@
 import React from 'react'
-import { ThemeProvider, CSSReset, Box, Button, Spacer, Text, Badge } from '@evilfactory/anggun-core'
+import {
+  ThemeProvider,
+  CSSReset,
+  Box,
+  Button,
+  Spacer,
+  Text,
+  Badge,
+  Image
+} from '@evilfactory/anggun-core'
 import logo from './logo.svg'
 import { useState } from 'react'
 
@@ -15,7 +24,7 @@ function App() {
       <Spacer y={2} />
 
       <Box textAlign='center'>
-        <img alt='Anggun Design System' src={logo} />
+        <Image alt='Anggun Design System' src={logo} />
       </Box>
 
       <Spacer y={2} />

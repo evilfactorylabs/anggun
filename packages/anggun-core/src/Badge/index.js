@@ -75,7 +75,6 @@ const Badge = forwardRef(
      */
     const bg = bgStyle({ primary, danger, warning, success })
     const _color = bg === 'warning' ? 'black' : color
-    console.log(_color)
     return (
       <Box
         ref={ref}
