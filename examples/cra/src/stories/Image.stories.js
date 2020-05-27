@@ -19,8 +19,8 @@ export const Image = () => {
           'https://avatars0.githubusercontent.com/u/31406355?s=400&u=d0dd7eb41508b44a3ab7232e4056e04043a9b3b0&v=4'
         )}
         alt={text('alt', 'kevanantha')}
-        nativeHeight={text('nativeHeight', '100px')}
-        nativeWidth={text('nativeWidth', '100px')}
+        nativeheight={text('nativeheight', '100px')}
+        nativewidth={text('nativewidth', '100px')}
       />
     </ThemeProvider>
   )

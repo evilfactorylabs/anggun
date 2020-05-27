@@ -9,11 +9,11 @@ const config = {
     property: 'height',
     scale: 'sizes'
   },
-  nativeHeight: {
+  nativeheight: {
     property: 'height',
     scale: 'sizes'
   },
-  nativeWidth: {
+  nativewidth: {
     property: 'width',
     scale: 'sizes'
   }
