@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Box } from '@evilfactory/anggun-core'
+import { Grid, Box } from '@evilfactory/anggun'
 
 function GridComponent() {
   return (

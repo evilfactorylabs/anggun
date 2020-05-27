@@ -5,7 +5,7 @@ import {
   CSSReset,
   Box as BoxComponent,
   Button as ButtonComp
-} from '@evilfactory/anggun-core'
+} from '@evilfactory/anggun'
 import { withKnobs, text, number, select } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 

@@ -5,7 +5,7 @@ import {
   Box as BoxComponent,
   Button as ButtonComp,
   Spacer as SpacerComp
-} from '@evilfactory/anggun-core'
+} from '@evilfactory/anggun'
 import { withKnobs, number } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 

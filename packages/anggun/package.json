@@ -1,5 +1,5 @@
 {
-  "name": "@evilfactory/anggun-core",
+  "name": "@evilfactory/anggun",
   "version": "0.3.0",
   "description": "Evilfactory Design System",
   "main": "./dist/lib/index.js",

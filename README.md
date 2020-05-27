@@ -10,10 +10,10 @@ Go to [https://anggun.now.sh/](https://anggun.now.sh/)
 
 ```
 # yarn
-yarn add @evilfactory/anggun-core
+yarn add @evilfactory/anggun
 
 # npm
-npm i @evilfactory/anggun-core
+npm i @evilfactory/anggun
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ npm i @evilfactory/anggun-core
 You need to wrap your components with `ThemeProvider` and add `CSSReset` to reset browser styles and make sure the component works correctly
 
 ```jsx
-import { ThemeProvider, CSSReset } from '@evilfactory/anggun-core'
+import { ThemeProvider, CSSReset } from "@evilfactory/anggun";
 
 const App = () => (
   <ThemeProvider>
@@ -29,9 +29,9 @@ const App = () => (
 
     {/* your components here */}
   </ThemeProvider>
-)
+);
 
-export default App
+export default App;
 ```
 
 ## Maintainers

@@ -8,7 +8,7 @@ import {
   Text,
   Badge,
   Image
-} from '@evilfactory/anggun-core'
+} from '@evilfactory/anggun'
 import logo from './logo.svg'
 import { useState } from 'react'
 

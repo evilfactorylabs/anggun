@@ -2,7 +2,7 @@ import React from 'react'
 import { withKnobs } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 
-import { ThemeProvider, CSSReset, Box, Flex as FlexComp } from '@evilfactory/anggun-core'
+import { ThemeProvider, CSSReset, Box, Flex as FlexComp } from '@evilfactory/anggun'
 
 export default {
   title: 'Flex',
