@@ -3,8 +3,11 @@
   "version": "0.4.0",
   "private": true,
   "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
     "@testing-library/react": "^10.0.2",
     "@testing-library/user-event": "^10.0.2",
+    "emotion-theming": "^10.0.27",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0"

@@ -1,3 +1,4 @@
+export { default as Image } from './Image'
 export { default as Badge } from './Badge'
 export { default as Flex } from './Flex'
 export { default as Grid } from './Grid'

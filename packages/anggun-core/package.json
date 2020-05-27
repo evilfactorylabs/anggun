@@ -2,7 +2,9 @@
   "name": "@evilfactory/anggun-core",
   "version": "0.3.0",
   "description": "Evilfactory Design System",
-  "main": "dist/index.js",
+  "main": "./dist/lib/index.js",
+  "module": "./dist/lib-es/index.js",
+  "typings": "./dist/index.d.ts",
   "repository": "https://github.com/evilfactorylabs/anggun",
   "author": "evilfactory",
   "license": "MIT",
@@ -15,7 +17,10 @@
   "scripts": {
     "clean": "rimraf dist",
     "rollup": "rollup -c ./rollup.config.js",
-    "compile": "yarn clean && yarn rollup",
+    "compile": "yarn dist:babel:cjs && yarn dist:babel:es",
+    "dist:rollup": "yarn clean && NODE_ENV=production yarn rollup",
+    "dist:babel:cjs": "rimraf dist/lib && BABEL_MODULE=commonjs babel --root-mode upward src --out-dir dist/lib",
+    "dist:babel:es": "rimraf dist/lib-es && babel --root-mode upward src --out-dir dist/lib-es",
     "compile:watch": "yarn clean && yarn rollup --watch",
     "prepublishOnly": "yarn compile"
   },
