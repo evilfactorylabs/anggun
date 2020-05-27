@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Flex, Box } from '@evilfactory/anggun-core'
+import { Flex, Box } from '@evilfactory/anggun'
 
 function FlexComponent() {
   return (

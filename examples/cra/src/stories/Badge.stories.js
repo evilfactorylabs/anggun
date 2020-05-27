@@ -1,5 +1,5 @@
 import React from 'react'
-import { ThemeProvider, CSSReset, Badge as BadgeComp, Spacer } from '@evilfactory/anggun-core'
+import { ThemeProvider, CSSReset, Badge as BadgeComp, Spacer } from '@evilfactory/anggun'
 import { withKnobs, select, text } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 

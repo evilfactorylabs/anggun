@@ -1,5 +1,5 @@
 import React from 'react'
-import { ThemeProvider, CSSReset, Image as ImageComp } from '@evilfactory/anggun-core'
+import { ThemeProvider, CSSReset, Image as ImageComp } from '@evilfactory/anggun'
 import { withKnobs, text } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 

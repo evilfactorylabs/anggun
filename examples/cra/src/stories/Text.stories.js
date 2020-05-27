@@ -1,5 +1,5 @@
 import React from 'react'
-import { ThemeProvider, CSSReset, Text as TextComp } from '@evilfactory/anggun-core'
+import { ThemeProvider, CSSReset, Text as TextComp } from '@evilfactory/anggun'
 import { withKnobs, select } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 

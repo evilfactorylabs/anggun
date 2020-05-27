@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ThemeProvider, CSSReset, Box, Grid as GridComp } from '@evilfactory/anggun-core'
+import { ThemeProvider, CSSReset, Box, Grid as GridComp } from '@evilfactory/anggun'
 import { withKnobs, select, number } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 

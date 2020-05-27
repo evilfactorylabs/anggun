@@ -5,31 +5,20 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [0.3.0](https://github.com/evilfactorylabs/anggun/compare/@evilfactory/anggun-core@0.2.0...@evilfactory/anggun-core@0.3.0) (2020-04-17)
 
-
 ### Bug Fixes
 
-* **core:** set margin p tag to zero ([#18](https://github.com/evilfactorylabs/anggun/issues/18)) ([6963755](https://github.com/evilfactorylabs/anggun/commit/6963755ef8e1177d0cde5db680f052a9bafce561))
-
+- **core:** set margin p tag to zero ([#18](https://github.com/evilfactorylabs/anggun/issues/18)) ([6963755](https://github.com/evilfactorylabs/anggun/commit/6963755ef8e1177d0cde5db680f052a9bafce561))
 
 ### Features
 
-* **core:** grid component ([#19](https://github.com/evilfactorylabs/anggun/issues/19)) ([46ed814](https://github.com/evilfactorylabs/anggun/commit/46ed8140dfbf78398987f69a7f16d06d42718630))
-
-
-
-
+- **core:** grid component ([#19](https://github.com/evilfactorylabs/anggun/issues/19)) ([46ed814](https://github.com/evilfactorylabs/anggun/commit/46ed8140dfbf78398987f69a7f16d06d42718630))
 
 # [0.2.0](https://github.com/evilfactorylabs/anggun/compare/@evilfactory/anggun-core@0.1.1...@evilfactory/anggun-core@0.2.0) (2020-04-16)
 
-
 ### Features
 
-* **core:** add CSSReset component ([#16](https://github.com/evilfactorylabs/anggun/issues/16)) ([38921bf](https://github.com/evilfactorylabs/anggun/commit/38921bf430f5aaa34425b910e89c04bb0828faee))
-* **core:** add text component ([#17](https://github.com/evilfactorylabs/anggun/issues/17)) ([5398f0e](https://github.com/evilfactorylabs/anggun/commit/5398f0e1e5765b968a66f03a8a4c0861985c7b38))
-
-
-
-
+- **core:** add CSSReset component ([#16](https://github.com/evilfactorylabs/anggun/issues/16)) ([38921bf](https://github.com/evilfactorylabs/anggun/commit/38921bf430f5aaa34425b910e89c04bb0828faee))
+- **core:** add text component ([#17](https://github.com/evilfactorylabs/anggun/issues/17)) ([5398f0e](https://github.com/evilfactorylabs/anggun/commit/5398f0e1e5765b968a66f03a8a4c0861985c7b38))
 
 ## [0.1.1](https://github.com/evilfactorylabs/anggun/compare/@evilfactory/anggun-core@0.1.0...@evilfactory/anggun-core@0.1.1) (2020-04-10)
 
