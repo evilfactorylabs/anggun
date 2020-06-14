@@ -25,9 +25,9 @@ const sizes = [
   '150px',
   '200px'
 ]
-sizes.small = sizes[sizes.length - 3]
-sizes.medium = sizes[sizes.length - 2]
-sizes.large = sizes[sizes.length - 1]
+// sizes.small = sizes[sizes.length - 3]
+// sizes.medium = sizes[sizes.length - 2]
+// sizes.large = sizes[sizes.length - 1]
 
 const space = [0, 4, 8, 10, 16, 20, 32, 64, 128, 256, 512]
 

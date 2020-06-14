@@ -16,12 +16,12 @@ const Spacer = forwardRef(({ y, x }, ref) => {
 
   return (
     <Box
-      as='span'
+      as="span"
       ref={ref}
       paddingY={transformValue(y)}
       paddingX={transformValue(x)}
       display={display(y, x)}
-      aria-hidden='true'
+      aria-hidden="true"
     />
   )
 })

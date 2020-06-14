@@ -1,16 +1,13 @@
 const BABEL_MODULE = process.env.BABEL_MODULE
 
-function makePresets (module) {
+function makePresets(module) {
   return [
     ['@babel/preset-env', { modules: module }],
     ['@babel/preset-react', { modules: module }]
   ]
 }
 
-const plugins = [
-  '@babel/plugin-proposal-object-rest-spread',
-  '@babel/plugin-transform-runtime'
-]
+const plugins = ['@babel/plugin-proposal-object-rest-spread', '@babel/plugin-transform-runtime']
 
 module.exports = {
   env: {
