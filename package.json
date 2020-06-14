@@ -18,7 +18,8 @@
     "build:docs": "yarn compile && lerna run build --scope=cra --stream",
     "dev:docs": "yarn workspace cra start",
     "test:docs": "yarn workspace cra test",
-    "storybook": "lerna run storybook --scope=cra --stream"
+    "storybook": "lerna run storybook --scope=cra --stream",
+    "lint": "eslint './packages/**/*.{js,jsx,ts,tsx}'"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -33,24 +34,30 @@
     "@rollup/plugin-babel": "^5.0.2",
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
     "babel-loader": "8.0.6",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.0",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb-typescript": "^8.0.1",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.2.3",
     "lerna": "^3.20.2",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
     "rollup": "^2.2.0",
-    "rollup-plugin-terser": "^6.1.0"
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "typescript": "^3.9.3"
   },
-  "npmClient": "yarn",
-  "useWorkspaces": true,
   "workspaces": [
     "packages/*",
     "examples/*"
@@ -62,7 +69,6 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint --fix",
     "**/**/**/*.+(js|json|jsx|mdx|md)": [
       "prettier --write",
       "git add "

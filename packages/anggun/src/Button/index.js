@@ -29,7 +29,7 @@ const sizeProps = size => sizes[size]
 const solidButton = ({ children, border, color, bg, size, ...rest }) => {
   const _color = bg === 'warning' ? 'black' : color
   return (
-    <Box border='none' color={_color} bg={bg} {...sizeProps(size)} {...rest}>
+    <Box border="none" color={_color} bg={bg} {...sizeProps(size)} {...rest}>
       {children}
     </Box>
   )
@@ -38,10 +38,10 @@ const solidButton = ({ children, border, color, bg, size, ...rest }) => {
 const outlineButton = ({ children, color, border, bg, size, ...rest }) => {
   return (
     <Box
-      borderStyle='solid'
-      borderWidth='1px'
+      borderStyle="solid"
+      borderWidth="1px"
       borderColor={bg}
-      bg='inherit'
+      bg="inherit"
       color={bg}
       {...sizeProps(size)}
       {...rest}

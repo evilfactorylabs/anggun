@@ -22,7 +22,7 @@ const Flex = forwardRef(
     ref
   ) => (
     <Box
-      display='flex'
+      display="flex"
       ref={ref}
       alignItems={alignItems}
       alignContent={alignContent}
