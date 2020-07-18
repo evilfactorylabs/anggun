@@ -22,6 +22,7 @@
     "dist:babel:cjs": "rimraf dist/lib && BABEL_MODULE=commonjs babel --root-mode upward lib --out-dir dist/lib",
     "dist:babel:es": "rimraf dist/lib-es && babel --root-mode upward lib --out-dir dist/lib-es",
     "compile:watch": "yarn clean && yarn rollup --watch",
+    "storybook": "start-storybook",
     "prepublishOnly": "yarn compile"
   },
   "dependencies": {
@@ -32,9 +33,14 @@
     "styled-system": "^5.1.5"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^5.3.19",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/react": "^5.3.19",
     "@types/react": "^16.9.35",
     "@types/styled-system": "^5.1.9",
-    "@types/styled-system__should-forward-prop": "^5.1.1"
+    "@types/styled-system__should-forward-prop": "^5.1.1",
+    "babel-preset-react-app": "^9.1.2",
+    "react-dom": "^16.13.1"
   },
   "peerDependencies": {
     "react": "^16.10.1",

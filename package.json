@@ -18,7 +18,7 @@
     "build:docs": "yarn compile && lerna run build --scope=cra --stream",
     "dev:docs": "yarn workspace cra start",
     "test:docs": "yarn workspace cra test",
-    "storybook": "lerna run storybook --scope=cra --stream",
+    "storybook": "lerna run storybook --stream",
     "lint": "eslint './packages/**/*.{js,jsx,ts,tsx}'"
   },
   "devDependencies": {
@@ -59,8 +59,7 @@
     "typescript": "^3.9.3"
   },
   "workspaces": [
-    "packages/*",
-    "examples/*"
+    "packages/*"
   ],
   "husky": {
     "hooks": {
