@@ -1,6 +1,6 @@
-import { system } from 'styled-system'
+import { system, Config } from 'styled-system'
 
-const config = {
+const config: Config = {
   rounded: {
     property: 'borderRadius',
     scale: 'radii'

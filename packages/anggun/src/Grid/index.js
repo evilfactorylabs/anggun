@@ -24,7 +24,7 @@ const Grid = forwardRef(
     ref
   ) => (
     <Box
-      display='grid'
+      display="grid"
       ref={ref}
       gridGap={gap}
       gridColumnGap={columnGap}
